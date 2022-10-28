@@ -1,4 +1,4 @@
-version: '3'
+version: '3.3'
 
 services:
   
@@ -10,7 +10,7 @@ services:
       - ./.env
   
   web:
-    image: vavilovnv/api_yamdb
+    image: vavilovnv/api_yamdb:latest
     restart: always
     volumes:
       - static_value:/app/static/
